@@ -1,4 +1,4 @@
-require 'pry'
+require ‘pry’
 
 class Song
   attr_accessor :name, :artist_name
@@ -48,10 +48,10 @@ class Song
   end
 
   def self.new_from_filename(input)
-    data = input.split(" - ")
+    data = input.split(“ - “)
     artist_name = data[0]
     
-    data[1].slice!(".mp3")
+    data[1].slice!(“.mp3”)
     song_name = data[1]
 
     song = self.new
